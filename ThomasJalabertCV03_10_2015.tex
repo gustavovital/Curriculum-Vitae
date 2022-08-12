@@ -1,0 +1,116 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[utf8]{inputenc}  
+\moderncvtheme[black]{classic}     
+\nopagenumbers{}                             
+\AtBeginDocument{\recomputelengths}
+%\usepackage[french]{babel} 
+
+
+%\renewcommand{\listitemsymbol}{-~}  % change the symbol for lists
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\rmdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+% adjust the page margins
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.9cm}
+
+\setlength{\makecvtitlenamewidth}{9cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+
+% personal data
+\firstname{\Huge{Gustavo}}
+\familyname{de Oliveira Vital}
+\title{\LARGE{Economist / Data Scientist}}                        
+\address{Porto}{Portugal}   
+\mobile{+351 913 627 835}                   
+%\phone{+33(0)4.76.24.10.36}       
+\email{gustavovital@id.uff.br} 
+%\extrainfo{21 ans - Permis B}
+\photo[80pt][0pt]{profile.png}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+\AfterPreamble{\hypersetup{
+  pdfauthor={Gustavo de Oliveira Vital},
+  pdftitle={CV of Gustavo Vital},
+  pdfsubject={CV détaillé pour Thomas Jalabert},
+  urlcolor=blue,
+}}
+
+\begin{document}
+
+\makecvtitle
+
+I am an economist with experience in monitoring the Brazilian macroeconomic scenario with an emphasis on economic activity. Also, I have interest in finance/macroeconomics and experience in the areas of data analysis and data science -- specifically in Natural Language Processing, time series and classification algorithms.
+
+\section{Professional Experience}
+
+\cventry{2018--2021}{Publishing Advisor}{Economica Journal }{Postgraduate Program in Economics}{Federal Fluminense University}{Implementation of classes and macros in \LaTeX, for standardization and automation of scientific articles, as well as verification of the Brazilian Association of Technical Norms (ABNT) for economic articles.}
+\cventry{2019--2020}{Intern -- Computer Lab}{Faculty of Economics}{Federal Fluminense University}{}{Review of scripts and code in \texttt{Python}, \texttt{R} and \LaTeX; Monitoring for econometric software in \texttt{Gretl} and \texttt{Eviews}.}
+%\cventry{Mars 2014}{Monopoly}{Projet interne IUT}{}{Une semaine. Réalisé en Java avec la bibliothèque SWING}{}
+
+\section{Education}
+\cventry{2020--Present}{University of Porto}{\textbf{Master’s degree in Economics}}{\href{https://sigarra.up.pt/fep/pt/web_page.inicial}{Faculty of Economics}}{Porto, Portugal}{\href{https://github.com/gustavovital/Dissertation}{Thesis: Applications of Sentiment Analysis and Natural Language Processing in the Case of European Central Bank Speeches}}% arguments 3 to 6 can be left empty
+
+\cventry{2015--2019}{Federal Fluminense University}{\textbf{Bachelor’s degree in Economics}}{\href{http://economia.uff.br/}{Faculty of Economics}}{Rio de Janeiro, Brazil}{\href{https://github.com/gustavovital/Monografia}{Dissertation: Applications of Sentiment Analysis Techniques to the Minutes of the Monetary Policy Committee: Comparison of the Periods from 2003 to 2018 (Portuguese)}\begin{itemize}
+    \item Nomination for the best monograph award by the Universidade Federal Fuminense for the course conclusion work -- CORECON RJ.
+\end{itemize} }
+
+%\cventry{2009--2013}{Baccalauréat Scientifique}{\href{http://www.itec-boisfleury.fr/}{Lycée ITEC Boisfleury}}{Corenc}{\textit{Mention Bien}}{}
+
+
+\section{Extracurricular Competencies}
+
+\cventry{2016--2017}{Tutorial Education Program - PET Economia UFF}{\textbf{Participating Member}}{conjuncture research in Economic Activity and International Economy under the supervision of Professor Dr. \href{http://lattes.cnpq.br/./8651374984153316
+}{Lérida Povoleri}}{Organization of roundtables on the Brazilian Conjuncture}{}
+
+\cventry{2017--2018}{Tutorial Education Program - PET Economia UFF}{\textbf{Research Coordinator}}{Conjecture research in the analysis of the Brazilian conjuncture, and Credit Market section}{}{}
+
+\cventry{2018--2019}{Econometrics I and Econometrics II Subject Monitor}{\textbf{Subject Monitor}}{Support for Econometrics I and Econometrics II subjects, under the project entitled \href{https://github.com/gustavovital/Materials/tree/main/Aplica\%C3\%A7\%C3\%B5es\%20do\%20Teorema\%20de\%20Frisch-Waugh-Lovell}{``Applications of the Frisch-Waugh-Lovell''} }{}{}
+
+\section{Other Skills}
+
+\cvitem{Languages}{\textbf{Portuguese}, native; \textbf{English}, Advanced; \textbf{French}, Intermediate; \textbf{Spanish}, Basic}
+
+\cvitem{Programming Languages}{\textbf{R}, Advanced; \textbf{Python}, Advanced; \textbf{\LaTeX}, Advanced; \textbf{SQL}, Intermediate; \textbf{MatLab}, Intermediate; \textbf{Julia}, Basic}
+
+\cvitem{Softwares}{\textbf{Eviews}, Advanced; \textbf{STATA}, Intermediate; \textbf{Gretl}, Intermediate; \textbf{Excel}, Advanced, \textbf{Power Bi}, Intermediate}
+
+%\cvitem{Langages}{C/C++, Java, Python, HTML/CSS, PHP, Javascript, SQL, XML, \LaTeX, Bash}
+%\cvitem{Logiciels}{Visual Studio, Eclipse, NetBeans, Code::Blocks, Visual Paradigm, Doxygen, Git}
+
+%\cvitem{Français}{Langue Maternelle}
+%\cvitem{Anglais}{Lu, écrit, parlé}
+%\cvitem{Allemand}{Notions}
+
+%\cvitem{Comportementales}{Travail en équipe, Adaptation, Flexibilité, Autonomie}
+
+
+%\section{Expériences professionnelles}
+%\cventry{Avril--Juin 2015}{Développeur stagiaire}{\href{http://lgge.osug.fr/}{Centre Scientifique et Technique du Bâtiment}}{Saint-Martin-D'Hères}{10 semaines}{Développement de plusieurs modules du logiciel d'acoustique environnemental MithraSON.}
+%\cventry{Août 2012 et Juillet 2013}{Agent d'entretien}{Piscine municipale}{Eybens}{Un mois (2 fois)}{}
+%\cventry{Juillet 2011}{Animateur pour enfants}{MJC}{Saint-Martin-d'Hères}{Un mois}{}
+
+
+%\section{Centres d'intérêt}
+
+%\cvitem{Loisir}{Musique, Littérature (Science-Fiction), Jeux vidéos}
+%\cvitem{Sport}{Badminton, Escalade}
+
+%\cvitem{Associatif}{
+%\begin{itemize}
+%\item Membre de l'association What's your game qui gère des tournois de jeux vidéos en ligne et en salle.  \item Donneur de sang. 
+%\item Calcul bénévole avec \href{https://boinc.berkeley.edu/}{BOINC} et \href{http://www.gridcoin.us/}{Gridcoin}.
+%\end{itemize}
+%}
+               
+\end{document}
+
